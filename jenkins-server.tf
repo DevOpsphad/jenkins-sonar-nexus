@@ -67,7 +67,7 @@ resource "aws_instance" "jenkins-server" {   # we are creating a new instance fo
     iam_instance_profile = aws_iam_instance_profile.our-instance-profile.name
     security_groups = [aws_security_group.our-security-group.id] # this is security grp in which we have openend ports
     root_block_device {
-      volume_size = 20
+      volume_size = 25
     }
 
     tags = {
